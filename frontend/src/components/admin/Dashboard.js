@@ -20,7 +20,7 @@ const Dashboard = () => {
     const { orders, totalAmount, loading } = useSelector(state => state.allOrders)
 
     let outOfStock = 0;
-    products.forEach(product => {
+    products?.forEach(product => {
         if (product.stock === 0) {
             outOfStock += 1;
         }

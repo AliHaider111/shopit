@@ -50,7 +50,8 @@ exports.getProducts = catchAsyncErrors(async (req, res, next) => {
         .search()
         .filter()
 
-    let products = await apiFeatures.query;
+        let products = await apiFeatures.query;
+        console.log(apiFeatures, "apiFeaturesapiFeaturesapiFeatures")
     let filteredProductsCount = products.length;
 
     apiFeatures.pagination(resPerPage)

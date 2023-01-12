@@ -80,7 +80,7 @@ const Payment = ({ history }) => {
             console.log(clientSecret);
 
             if (!stripe || !elements) {
-                return;
+                return; 
             }
 
             const result = await stripe.confirmCardPayment(clientSecret, {
